@@ -17,9 +17,9 @@ if __name__== '__main__':
 			my_pkg.binary(num)
 		elif menu == 2:
 			list_string1=input("input 1st list:")
-			list_num1=list_string1.split(',')
+			list_num1=list_string1.replace('[',' ').replace(']',' ').replace(',',' ').split()
 			list_string2 = input("input 2nd list:")
-			list_num2=list_string2.split(',')
+			list_num2=list_string2.replace('[',' ').replace(']',' ').replace(',',' ').split()
 			print("intersection : ")
 			my_pkg.intersect(list_num1,list_num2)
 			print("union:")
